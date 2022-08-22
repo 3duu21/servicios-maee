@@ -1,0 +1,14 @@
+{
+    "name": "eduardo/servicios-maee",
+    "description": "Pagina con informacion de Servicios MAEE",
+    "type": "project",
+    "authors": [
+        {
+            "name": "3duu21",
+            "email": "e5470843@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.6"
+    }
+}
