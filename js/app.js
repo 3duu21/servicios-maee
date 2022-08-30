@@ -55,7 +55,7 @@ function limpiarFormulario(){
     formulario.reset();
 }
 
-// boton up
+//boton up
 
 window.onscroll = function(){
     if(document.documentElement.scrollTop > 100){

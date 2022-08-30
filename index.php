@@ -157,7 +157,7 @@
 
 <section>
     <h2 id="contacto" class="centrar_texto titulo_contacto">Contacto</h2>
-    <form class="formulario contenedor" id="formulario">
+    <form id="formulario" class="formulario contenedor">
         <fieldset>
             <legend>Contactame, llena todos los campos</legend>
             <div class="contenedor-campos">
@@ -180,7 +180,7 @@
             </div>
 
             <div class="alinear-derecha flex">
-                <input class="boton w-sm-100" type="submit" value="Enviar">
+                <input class="boton w-sm-100" name="enviar" type="submit" value="Enviar">
             </div>
         </fieldset>
     </form>
