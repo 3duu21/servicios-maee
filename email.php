@@ -22,18 +22,23 @@ try {
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->SMTPSecure = "tls";
-        $mail->Port = 465;
-        $mail->Username = 'e5470943@gmail.com';
-        $mail->Password = 'zslhxkmzwzgdwdoe';
+        $mail->Port = 587;
+        $mail->Username = 'e5470843@gmail.com';
+        $mail->Password = 'ejppastwtvmkcfst
+';
     
-        $mail->setFrom('e5470943@gmail.com', ' Nos Ha Contactado!!!');
+        $mail->setFrom('serviciosMaee@gmail.com', ' Nos Ha Contactado!!!');
+        $mail->addAddress('e5470843@gmail.com');
         $mail->addAddress($email, $nombre);
+        
+        $mail->addAttachment('img/logo2.png');  
 
         //Set html
         $mail->isHTML(TRUE);
         $mail->CharSet = 'UTF-8';
-    
-        $mail->Body = "
+        
+        $mail->Subject = 'Contacto ServiciosMaee';
+        $mail->Body ="
         <html>
         <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');

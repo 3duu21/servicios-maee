@@ -1,20 +1,21 @@
-//Menu hamburguesa
-document.addEventListener('DOMContentLoaded', function(){
 
-    eventListeners();
-});
+//menu hamburguesa
+document.getElementById('btn_menu').addEventListener('click', mostrar_menu);
+document.getElementById('back_menu').addEventListener('click', ocultar_menu);
 
-function eventListeners(){
-    const mobileMenu = document.querySelector('.mobile-menu');
+nav = document.getElementById('nav');
+background_menu = document.getElementById('back_menu');
 
-    mobileMenu.addEventListener('click', navegacionResponsive);
+function mostrar_menu(){
+    nav.style.right = "0px";
+    background_menu.style.display = "block";
 }
 
-function navegacionResponsive(){
-    const navegacion = document.querySelector('.navegacion');
-
-    navegacion.classList.toggle('mostrar');
+function ocultar_menu(){
+    nav.style.right = "-25rem";
+    background_menu.style.display = "none";
 }
+
 
 //Enviar email
 
@@ -70,4 +71,10 @@ document.querySelector('.go-top').addEventListener('click', () => {
         top:0,
         behavior: 'smooth'
     });
+});
+
+
+window.addEventListener('scroll', () => {
+    let headerFijo = document.querySelector('header');
+    headerFijo.classList.toggle('abajo', window.scrollY > 0);
 });

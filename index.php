@@ -11,26 +11,28 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <title>ServiciosMAEE</title>
 </head>
-<header class="header">
-    <div class="contenedor">
-        <div class="barra">
-            <a href="/">
-                <img class="logo" loading="lazy" src="img/logo.png" alt="Logo ServiciosMAEE">
-            </a>
-            
-            <div class="mobile-menu">
-                <img loading="lazy" src="img/barras.svg" alt="icono menu responsive">
-            </div>
 
-            <nav class="navegacion">
-                <a class="enlace_navegacion" href="#">Inicio</a>
-                <a class="enlace_navegacion" href="#nosotros">Nosotros</a>
-                <a class="enlace_navegacion" href="#certificacion">SEC</a>
-                <a class="enlace_navegacion" href="#servicios">Servicios</a>
-                <a class="enlace_navegacion" href="#redes">Redes</a>
-                <a class="enlace_navegacion" href="#contacto">Contacto</a>
+<header>
+    <div class="contenedor_header">
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="menu">
+            <i class="fa-solid fa-bars" id="btn_menu"></i>
+            <div id="back_menu"></div>
+            <nav id="nav">
+                <img src="img/logo.png" alt="">
+                <ul>
+                    <li><a id="selected" href="#">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#certificacion">SEC</a></li>
+                    <li><a href="#garantia">Garantía</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#redes">Redes</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
             </nav>
-        </div><!-- Barra-->
+        </div>
     </div>
 </header>
 
@@ -65,10 +67,23 @@
         <h2>Certificacion SEC</h2>
         Somos especialistas en Electricidad y contamos con el documento oficial que certifica que una instalación cumple con todos los 
         requisitos necesarios para suministrar energía, así como su calificación de eficiencia 
-        energética y su máxima potencia admisible. Tambien contamos con una garantía de 3, 6 y hasta 12 meses.
+        energética y su máxima potencia admisible. 
     </div>
     <div class="imagen_certificacion">
-        <img loading="lazy" src="img/SEC-Logo.jpg" alt="Logo SEC">
+        <img loading="lazy" src="img/ServicioSEC.jpg" alt="Logo SEC">
+    </div>
+</div>
+
+<div class="contenedor garantia" id="garantia">
+    <div class="imagen_garantia">
+        <img loading="lazy" src="img/garantia.jpg" alt="Servicios MAEE Garantia">
+    </div>
+    <div class="contenido_garantia">
+        <h2>Garantía</h2>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum architecto 
+        nobis quam eaque officia rem voluptates enim, mollitia quia accusamus ea fugiat 
+        sint, assumenda vero, incidunt et quae natus provident eius expedita similique 
+        corrupti? Nulla facere qui nam, magnam rerum,Tambien contamos con una garantía de 3, 6 y hasta 12 meses.
     </div>
 </div>
 
@@ -83,16 +98,14 @@
             <span class="servicios_span">Instalación de tableros eléctricos.</span>
             <span class="servicios_span">Instalación de enchufes y lamparas.</span>
             <span class="servicios_span">Instalación de sistemas de puesta a tierra.</span>
-            <span class="servicios_span">Instalación de tableros eléctricos.</span>
         </div>
         <div class="card">
-            <img loading="lazy" class="img_servicio" src="img/ServicioSEC.jpg" alt="Servicio Con Certificacion SEC">
-            <h4 class="titulo_servicio_prueba">Certificación SEC</h4>
-            <span class="servicios_span">Técnicos autorizados SEC.</span>
-            <span class="servicios_span">Elaboración de presupuestos.</span>
-            <span class="servicios_span">Regularizaciones eléctricas.</span>
-            <span class="servicios_span">Proyectos eléctricos.</span>
-            <span class="servicios_span">Garantías de 3, 6 y 12 meses.</span>
+            <img loading="lazy" class="img_servicio" src="img/serviciodomicilio.jpg" alt="Servicio a Domicilio">
+            <h4 class="titulo_servicio_prueba">Servicio a Domicilio</h4>
+            <span class="servicios_span">Instalaciones cumpliendo normativa SEC vigente.</span>
+            <span class="servicios_span">Reparación y armado de tableros eléctricos.</span>
+            <span class="servicios_span">Instalación de automáticos y diferenciales.</span>
+            <span class="servicios_span">Electromovilidad(Cargadores de Autos).</span>
         </div>
         <div class="card">
             <img loading="lazy" class="img_servicio" src="img/ServiciosMantencion.jpg" alt="Servicios de Mantencion">
@@ -118,38 +131,30 @@
             <span class="servicios_span">Red inalámbrica, TV cable.</span>
             <span class="servicios_span">Cableado estructurado para redes.</span>
         </div>
-        <div class="card">
-            <img loading="lazy" class="img_servicio" src="img/serviciodomicilio.jpg" alt="Servicio a Domicilio">
-            <h4 class="titulo_servicio_prueba">Servicio a Domicilio</h4>
-            <span class="servicios_span">Instalaciones cumpliendo normativa SEC vigente.</span>
-            <span class="servicios_span">Reparación y armado de tableros eléctricos.</span>
-            <span class="servicios_span">Instalación de automáticos y diferenciales.</span>
-            <span class="servicios_span">Electromovilidad(Cargadores de Autos).</span>
-        </div>
     </div>
     <!-- Fin prueba servicios -->
 </div>
 
 <h2 id="redes" class="centrar_texto titulo_redes">Redes Sociales</h2>
 <div class="contenedor contenedor-redes">
-    <ul>
-        <li>
+    <ul class="lista_efectos">
+        <li class="efectos">
             <a href="https://www.instagram.com/servicios_maee/">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span class="fa-brands fa-instagram"></span>
+                <span class="efecto_rd"></span>
+                <span class="efecto_rd"></span>
+                <span class="efecto_rd"></span>
+                <span class="efecto_rd"></span>
+                <span class="efecto_rd fa-brands fa-instagram"></span>
             </a>
         </li>
         
-        <li>
+        <li class="efectos">
             <a href="https://wa.me/56964274913/?text=Quisiera%20consultar%20sobre%20los%20servicios">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span class="fa-brands fa-whatsapp"></span>
+                <span class="efecto_rd"></span>
+                <span class="efecto_rd"></span>
+                <span class="efecto_rd"></span>
+                <span class="efecto_rd"></span>
+                <span class="efecto_rd fa-brands fa-whatsapp"></span>
             </a>
         </li>
     </ul>
