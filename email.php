@@ -18,17 +18,22 @@ try {
         //Crear el objeto de email
         $mail = new PHPMailer();
     
+        // $mail->isSMTP();
+        // $mail->Host = 'smtp.gmail.com';
+        // $mail->SMTPAuth = true;
+        // $mail->SMTPSecure = "tls";
+        // $mail->Port = 587;
+        // $mail->Username = 'electricidadmae7@gmail.com';
+        // $mail->Password = 'ejppastwtvmkcfst';
         $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com';
+        $mail->Host = 'smtp.mailtrap.io';
         $mail->SMTPAuth = true;
-        $mail->SMTPSecure = "tls";
-        $mail->Port = 587;
-        $mail->Username = 'e5470843@gmail.com';
-        $mail->Password = 'ejppastwtvmkcfst
-';
+        $mail->Port = 2525;
+        $mail->Username = 'f63c3cebdaa5bd';
+        $mail->Password = '864fcdf20fb58e';
     
         $mail->setFrom('serviciosMaee@gmail.com', ' Nos Ha Contactado!!!');
-        $mail->addAddress('e5470843@gmail.com');
+        $mail->addAddress('electricidadmae7@gmail.com');
         $mail->addAddress($email, $nombre);
         
         $mail->addAttachment('img/logo2.png');  
