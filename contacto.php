@@ -41,7 +41,7 @@
     <div class="wave"></div>
     <div class="header__texto" >
         <h1 class="no-margin ">Contacto</h1>
-        <p class="no-margin ubicacion__texto">Region Metropolitana. <i class="fa-solid fa-location-dot"></i></p>
+        <p class="no-margin ubicacion__texto">Region Metropolitana.<i class="fa-solid fa-location-dot"></i></p>
         
     </div>
 </section>
